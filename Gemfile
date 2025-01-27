@@ -1,2 +1,7 @@
 source "https://rubygems.org"
-gemspec
+
+gem "jekyll"
+gem "csv"
+gem "minimal-mistakes-jekyll"
+gem "base64"
+gem "webrick", "~> 1.9"
