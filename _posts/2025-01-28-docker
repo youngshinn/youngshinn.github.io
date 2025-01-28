@@ -1,3 +1,8 @@
+---
+layout: single
+title:  "first post"
+---
+
 Docker Swarm: 간단하고 강력한 컨테이너 오케스트레이션 도구
 
 1. Docker Swarm 소개
