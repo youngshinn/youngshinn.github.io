@@ -5,3 +5,6 @@ gem "csv"
 gem "minimal-mistakes-jekyll"
 gem "base64"
 gem "webrick", "~> 1.9"
+gem 'tzinfo'
+gem 'tzinfo-data'
+
