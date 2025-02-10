@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "youngshin"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/1.png"
   bio              : "공부하는 것을 기록하는 블로그입니다."
   location         : "South Korea"
   email            :
