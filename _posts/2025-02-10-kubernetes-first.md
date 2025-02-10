@@ -1,8 +1,8 @@
 ---
 layout: single
-title:  "kubernetes 아키텍쳐"
-categories: kubernetes
-tag: [kubernetes]
+title:  "Kubernetes 아키텍쳐"
+categories: Kubernetes
+tag: [Kubernetes]
 toc: true
 author_profile: false
 search: true
