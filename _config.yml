@@ -17,10 +17,10 @@ minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "youngshin"
+title                    : "Youngshin’s Dev Playground"
 title_separator          : "|"
-subtitle                 : "small  positive action" # site tagline that appears below site title in masthead
-name                     : "youngshin"
+subtitle                 : "Go at your own pace" # site tagline that appears below site title in masthead
+name                     : "Youngshin"
 description              : "youngshin blog"
 url                      : "https://youngshinn.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
