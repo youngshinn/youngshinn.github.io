@@ -72,6 +72,8 @@ Node는 실제로 애플리케이션(컨테이너)이 실행되는 **작업 공�
 
 ---
 
+![Kubernetes 아키텍처](/assets/images/kubernetes-arch.jpg)
+
 ## 2. Control Plane과 마스터 노드의 관계
 - **Control Plane**: Kubernetes 클러스터를 관리하는 **소프트웨어 컴포넌트 집합**입니다.
 - **마스터 노드**: Control Plane이 실행되는 **물리적 또는 가상 머신**입니다.

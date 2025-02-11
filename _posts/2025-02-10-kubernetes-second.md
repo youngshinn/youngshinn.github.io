@@ -2,7 +2,7 @@
 layout: single
 title:  "Kubernetes CNI와 Calico"
 categories: Kubernetes
-tag: [Kubernetes]
+tag: [Kubernetes, Devops]
 toc: true
 author_profile: false
 search: true
