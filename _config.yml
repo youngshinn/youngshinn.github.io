@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "youngshin"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/avatar.jpg"
   bio              : "공부하는 것을 기록하는 블로그입니다."
   location         : "South Korea"
   email            :
@@ -124,7 +124,7 @@ author:
       url: "mailto:cyshin1031@naver.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://youngshinn.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/youngshinn"
@@ -307,3 +307,10 @@ defaults:
       share: true
       related: true
       show_date: true
+      toc: true
+      toc_sticky: true
+      toc_label: 목차
+      toc_icon: "fas fa-tasks"
+      author_profile: false
+
+date_format: "%Y-%m-%d"

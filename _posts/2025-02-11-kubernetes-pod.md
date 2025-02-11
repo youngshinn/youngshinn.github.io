@@ -2,13 +2,21 @@
 layout: single
 title:  "Kubernetes Pod"
 categories: Kubernetes
-tag: [Kubernetes, Dveops]
-toc: true
-author_profile: false
+tag: [Kubernetes, Devops]
+
 search: true
 ---
 
 # Kubernetes Pod 관리 개요
+
+<div class='notice--success'>
+ <h4>학습 </h4>
+ <ul>
+    <li>fastcampus - 실무까지 한 번에 끝내는 Devops를 위한 Docker & kubernetes</li>
+    <li>도서: 시작하세요! Docker와 kubernetes</li>
+
+</ul>
+</div>
 
 
 ## 1. Pod란?
