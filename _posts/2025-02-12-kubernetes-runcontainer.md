@@ -43,7 +43,7 @@ spec:
 
 ## 컨테이너 이미지 생성 및 업로드
 
-### 1). Dockerfile 작성
+### 1) Dockerfile 작성
 ```bash
 FROM nginx:1.23.1-alpine
 RUN mkdir -p /usr/share/nginx/html/assets
@@ -57,20 +57,20 @@ EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 ```
 
-### 2). Docker 이미지 빌드 
+### 2) Docker 이미지 빌드 
 
 ```bash
 docker build -t mymotto:1.0 .
 docker images | grep mymotto
 ``` 
 
-### 3). 실행 테스트 
+### 3) 실행 테스트 
 ```bash
 docker run -d --name=mymotto -p 8001:80 mymotto:1.0
 curl localhost:8001
 ```
 
-### 4). Docker Hub에 푸시 
+### 4) Docker Hub에 푸시 
 ```bash
 docker tag mymotto:1.0 본인ID/mymotto:1.0 #Docker Hub ID 입력 
 docker push 본인ID/mymotto:1.0
@@ -79,14 +79,14 @@ docker push 본인ID/mymotto:1.0
 
 ## Kubernetes에 배포하기 
 
-### 1). 배포(명령어)
+### 1) 배포(명령어)
 ```bash 
 kubectl run mymotto --image=본인ID/mymotto:1.0 --port=80 --dry-run=client -o yaml > mymotto.yaml #Docker Hub ID
 kubectl apply -f mymotto.yaml
 kubectl get pods 
 ```
 
-### 2). Service 연결 
+### 2) Service 연결 
 ```bash 
 kubectl expose pod mymotto --name=mymotto-svc --port=8002 --target-port=80 --type=NodePort #NodePort 방식으로 연결 
 kubectl get svc
@@ -94,18 +94,18 @@ kubectl get svc
 
 ## Deployment를 활용한 배포 
 
-### 1). Deployment 생성 
+### 1) Deployment 생성 
 ```bash
 kubectl create deployment mymotto-deploy --image=본인ID/mymotto:1.0 --port=80 --replicas=3 --dry-run=client -o yaml > mymotto-deploy.yaml
 kubectl apply -f mymotto-deploy.yaml
 ```
 
-### 2). 베포 확인
+### 2) 배포 확인
 ```bash
 kubectl get deploy,po,svc -o wide | grep mymotto-deploy
 ```
 
-### 3). NodePort를 통한 서비스 노출 
+### 3) NodePort를 통한 서비스 노출 
 ```bash
 kubectl expose deployment mymotto-deploy --name=mymotto-deploy-svc --port=8003 --target-port=80 --type=NodePort
 kubectl get svc
