@@ -111,7 +111,7 @@ kubectl expose deployment mymotto-deploy --name=mymotto-deploy-svc --port=8003 -
 kubectl get svc
 ```
 
-## Kubeshar를 통한 네트워크 트래픽 확인 
+## Kubeshark를 통한 네트워크 트래픽 확인 
 **Kubeshark**를 활용하면 Pod 간 네트워크 트래픽을 실시간으로 모니터링할 수 있습니다.
 
 ```bash
