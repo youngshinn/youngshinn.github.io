@@ -2,7 +2,7 @@
 layout: single
 title:  "Kubernetes Pod"
 categories: Kubernetes
-tag: [Kubernetes, Devops]
+tag: [Kubernetes, DevOps]
 
 search: true
 ---

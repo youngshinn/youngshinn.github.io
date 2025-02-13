@@ -2,7 +2,7 @@
 layout: single
 title:  "Kubernetes Runtime container 만들기"
 categories: Kubernetes
-tag: [Kubernetes, Devops]
+tag: [Kubernetes, DevOps]
 
 search: true
 ---
