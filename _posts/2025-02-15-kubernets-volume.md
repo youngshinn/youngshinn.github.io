@@ -31,7 +31,10 @@ Pod가 생성될 때 **빈 디렉터리**가 제공되며, Pod가 삭제될 때 
 
 - Pod 내부의 특정 경로에 emptyDir을 마운트하여 사용할 수 있음.
 - Pod가 삭제되면 해당 디렉터리도 함께 삭제됨.
-(https://youngshinn.github.io/categories/)
+
+[emptyDir에 자세히 보기 ](https://youngshinn.github.io/kubernetes/kubernetes-volume-emptydir/)
+
+
 ```yaml
 apiVersion: v1
 kind: Pod
