@@ -1,6 +1,6 @@
 ---
 layout: single
-title:  "Go 제어문 및 반복문 정리"
+title:  "Go 문법 특징"
 categories: Go
 tag: [Go, Golang]
 search: true
