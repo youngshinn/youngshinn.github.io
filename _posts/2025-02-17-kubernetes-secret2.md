@@ -159,7 +159,7 @@ Container hostName & Port#: tlsapp-php-5ddf4fc8f9-qfvdx - <p> Docker Load Balanc
 </html>
 ```
 
-## **3. OpenSSL과 Ingress Nginx 활용 정리**
+## 3. OpenSSL과 Ingress Nginx 활용 정리
 
 | 기능        | OpenSSL                     | Ingress Nginx               |
 |------------|-----------------------------|-----------------------------|
