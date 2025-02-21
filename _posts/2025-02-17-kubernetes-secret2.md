@@ -72,7 +72,7 @@ tls.key:      1704 bytes
 
 ## **2. Ingress Nginx를 활용한 보안 방식**
 ### **2.1 Ingress Nginx란?**
-Ingress Nginx는 Kubernetes에서 트래픽을 관리하고 라우팅하는 역할을 수행하는 컨트롤러입니다.
+**Ingress Nginx**는 Kubernetes에서 트래픽을 관리하고 라우팅하는 역할을 수행하는 컨트롤러입니다.
 
 **Ingress Nginx의 주요 기능**
 * 도메인 기반 라우팅
@@ -159,7 +159,23 @@ Container hostName & Port#: tlsapp-php-5ddf4fc8f9-qfvdx - <p> Docker Load Balanc
 </html>
 ```
 
-## 3. OpenSSL과 Ingress Nginx 활용 정리
+## **3. SSL 방식과 Ingress 방식에서 HTTPS 프로토콜 처리**
+
+### **3.1 SSL(OpenSSL) 방식에서 HTTPS 처리 흐름**
+SSL 방식에서는 각 Pod에서 HTTPS를 직접 처리합니다.
+
+* 클라이언트가 https://example.com 요청
+* Pod 내부에서 OpenSSL을 사용해 HTTPS 요청을 처리
+* Pod마다 개별적으로 SSL 인증서가 필요하여 관리가 복잡
+
+### **3.2 Ingress Nginx 방식에서 HTTPS 처리 흐름**
+Ingress Nginx 방식에서는 Ingress 컨트롤러가 HTTPS를 처리하고 내부 트래픽은 HTTP로 전송합니다.
+
+* 클라이언트가 https://example.com 요청
+* Ingress 컨트롤러가 HTTPS 요청을 받고, TLS 인증서를 이용해 복호화
+* 내부 Pod로 HTTP 요청을 전달하여 응답을 받음
+
+## **4. OpenSSL과 Ingress Nginx 활용 정리**
 
 | 기능        | OpenSSL                     | Ingress Nginx               |
 |------------|-----------------------------|-----------------------------|
