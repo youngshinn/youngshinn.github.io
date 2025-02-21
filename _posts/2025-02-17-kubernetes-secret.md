@@ -50,7 +50,7 @@ Data
 password:  12 bytes
 ``` 
 
-## **2.2. From File 방식**
+### **2.2. From File 방식**
 `--from-file` 옵션을 사용하면 파일에 저장된 데이터를 Secret으로 만들 수 있다.
 
 **예제: 파일 내용을 Secret으로 저장하기**
