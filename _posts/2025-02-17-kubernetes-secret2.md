@@ -30,7 +30,7 @@ OpenSSL은 SSL/TLS 프로토콜을 구현하는 오픈소스 암호화 라이브
 ```bash
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -out server.crt -keyout server.key -subj "/CN=php.k8s.io,goapp.k8s.io"
 ```
-출력결과
+실행결과
 ```bash
 Generating a RSA private key
 ..................................................................+++++
@@ -45,7 +45,7 @@ writing new private key to 'server.key'
 ```bash
 kubectl create secret tls k8s-tls-secret --cert=server.crt --key=server.key
 ```
-출력결과
+실행결과
 ```bash
 secret/k8s-tls-secret created
 ```
@@ -55,7 +55,7 @@ kubectl get secrets
 kubectl describe secrets k8s-tls-secret
 ``` 
 
-출력결과
+실행결과
 ```bash
 NAME                  TYPE                DATA  AGE
 k8s-tls-secret        kubernetes.io/tls   2     10s
@@ -160,6 +160,7 @@ Container hostName & Port#: tlsapp-php-5ddf4fc8f9-qfvdx - <p> Docker Load Balanc
 ```
 
 ## **3. OpenSSL과 Ingress Nginx 활용 정리**
+
 | 기능        | OpenSSL                     | Ingress Nginx               |
 |------------|-----------------------------|-----------------------------|
 | **역할**    | SSL 인증서 생성 및 관리      | 트래픽 관리 및 라우팅       |
