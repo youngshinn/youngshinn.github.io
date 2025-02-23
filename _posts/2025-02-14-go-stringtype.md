@@ -15,7 +15,7 @@ Go 언어에서는 문자를 다루는 다양한 타입이 존재합니다. 일�
 
 Go의 `string` 타입은 불변(immutable)한 바이트 시퀀스로, UTF-8 인코딩을 기본적으로 따릅니다. 즉, 문자열 내부적으로 바이트 배열로 저장됩니다.
 
-```GO
+```go
 package main
 import "fmt"
 
@@ -33,7 +33,7 @@ func main() {
 
 Go에서 `byte`는 `uint8의 별칭(alias)`이며, 문자열의 개별 문자를 ASCII 코드(혹은 UTF-8의 단일 바이트)로 다룰 때 사용됩니다.
 
-```GO
+```go
 package main
 import "fmt"
 
@@ -53,7 +53,7 @@ func main() {
 ## **3. 룬(rune) 타입**
 Go에서 `rune`은 `int32`의 별칭이며, UTF-8에서 하나의 문자를 표현하는 데 사용됩니다. 다국어 문자(예: 한글, 한자)를 다룰 때 rune을 활용하면 올바르게 처리할 수 있습니다.
 
-```GO
+```go
 package main
 import "fmt"
 
@@ -73,7 +73,7 @@ rune 슬라이스: [50504 45397 54616 49464 50836]
 ## **4. 문자열의 문자 추출**
 Go에서는 `string[index]`로 문자를 가져올 수 있지만, 한글처럼 UTF-8에서 1바이트 이상을 차지하는 문자는 깨질 수 있습니다. 이를 해결하려면 `rune` 타입으로 변환해야 합니다.
 
-```GO
+```go
 package main
 import "fmt"
 
