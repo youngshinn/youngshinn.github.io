@@ -168,7 +168,7 @@ kubectl rollout undo deployment mydb --to-revision=1
 ```
 ## **5. Deployment 관리 Best Practices**
 
-### ** Label 및 Annotation 활용 **
+### **Label 및 Annotation 활용**
 Deployment 리소스는 `Label`을 통해 세부적으로 관리할 수 있습니다.
 
 ```yaml
