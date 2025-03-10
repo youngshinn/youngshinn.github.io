@@ -5,7 +5,7 @@ categories: Docker
 tag: [Docker, DevOps, Container]
 search: true
 ---
-# ** Ubuntu linux에서 Docker 설치하기 
+# **Ubuntu linux에서 Docker 설치하기** 
 
 ## 1. 필요한 패키지 설치 
 
