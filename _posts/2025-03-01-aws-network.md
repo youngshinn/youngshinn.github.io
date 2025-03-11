@@ -103,3 +103,6 @@ VPC의 **서브넷 수준**에서 동작하는 방화벽입니다.
 *사용 예시*
 - 공격 차단: 특정 IP 대역의 접근 차단.
 - 보안 레벨 추가: Security Group과 조합하여 세밀한 보안 정책 적용.
+
+
+![aws_networkd](/assets/images/aws_vpc.gif)
