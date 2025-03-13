@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "AWS VPC 네트워크 보안 및 Bastion Host 접속 실습"
-categories: AWS
+categories: AWS-pratice
 tag: [vpc, Aws, Network]
 search: true
 ---
