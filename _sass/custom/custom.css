@@ -1,0 +1,42 @@
+/* ✅ 사이드바 카테고리 스타일 */
+.sidebar-box {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.sidebar-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sidebar-category-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.sidebar-category-list li {
+    margin-bottom: 8px;
+}
+
+.sidebar-category-list a {
+    display: inline-block;
+    background: #e9ecef;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.sidebar-category-list a:hover {
+    background: #007bff;
+    color: white;
+}
